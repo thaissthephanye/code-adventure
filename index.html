@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Adventure | Seu Nome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Interface do Usuário -->
+    <div id="ui">
+      <div class="score">Habilidades: <span id="skills-count">0</span>/5</div>
+      <div class="controls">
+        <p>Use ← → para mover e ↑ para pular</p>
+      </div>
+    </div>
+
+    <!-- Tela de Início -->
+    <div id="start-screen">
+      <h1>Code Adventure</h1>
+      <p>Colete habilidades e descubra meus projetos!</p>
+      <button id="start-btn">Começar Jogo</button>
+    </div>
+
+    <!-- Canvas onde o jogo será renderizado -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Tela de Game Over -->
+    <div id="end-screen" class="hidden">
+      <h2>Parabéns!</h2>
+      <p>Você coletou <span id="final-score">0</span> habilidades!</p>
+      <button id="restart-btn">Jogar Novamente</button>
+      <a href="seu-portfolio.html" class="btn-portfolio"
+        >Ver Portfólio Completo</a
+      >
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
